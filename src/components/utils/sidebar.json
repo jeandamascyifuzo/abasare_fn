@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Home",
+    "icon": "bi bi-house-fill",
+    "path": "/boards"
+  },
+  {
+    "title": "Drivers",
+    "icon": "bi bi-people-fill",
+    "path": "/drivers"
+  }
+]
