@@ -1,27 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Dashboard from "../Dashboard";
-import { axiosRequest } from "../../api";
-import { getUser } from "../utils/common";
-import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
-
-const Sales_URL = "sales";
+// import { axiosRequest } from "../../api";
 
 const Home = () => {
-
-  const getSales = () => {
-    axiosRequest
-      .get(Sales_URL)
-      .then((res) => {
-        const response = res.data.data;
-        const result = response.filter(
-          (element) => element.status === "COMPLETED"
-        );
-        // setSalesData(result);
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
-  };
 
   return (
     <Dashboard>
